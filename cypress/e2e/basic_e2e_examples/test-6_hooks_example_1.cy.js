@@ -1,5 +1,5 @@
 describe('Login actions using custom commands', function () {
-    before(function () {
+    before(function () { // Here is an example of usage 'before' hook that allows to execute specific actions before ALL tests in the current file
         cy.SignIn()
     })
 

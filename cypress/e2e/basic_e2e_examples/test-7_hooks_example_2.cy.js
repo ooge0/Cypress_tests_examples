@@ -1,8 +1,8 @@
 describe('Login actions using custom commands', function () {
-    this.beforeEach(function () {
+    beforeEach(function () { // Here is an example of usage 'beforeEach' hook that allows to execute some actions before each test
         cy.SignIn()
     })
-
+    // Both tests are doing the same actions but after each test was executed 'SingOut' action.
     it('Create a new post(example-1)', function () {
         cy.contains('New Article').click()
         cy.get('input[placeholder="Article Title"]').type('Loro ipsum')
