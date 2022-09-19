@@ -1,0 +1,28 @@
+#Trash
+.idea
+
+# Logs
+logs
+*.log
+
+#Reports
+mochawesome-report
+reports
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules/
+cypress/videos
+cypress/screenshots
+cypress/logs
+cypress/fixtures/profile.json
+cypress/fixtures/users.json
+
+*.aes
+.history
+.vscode
+env
+.DS_Store
