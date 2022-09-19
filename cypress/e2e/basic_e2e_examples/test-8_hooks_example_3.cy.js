@@ -1,5 +1,5 @@
 describe('Login actions using custom commands', function () {
-    this.beforeEach(function () {
+    beforeEach(function () {
         cy.SignIn()
     })
 
