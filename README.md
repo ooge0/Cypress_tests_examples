@@ -344,7 +344,7 @@ Licence
 
 [CONTENT](#content)
 ## 4. Good to know:
-* Cypress projectId": "r7dgx9"
+* Cypress projectId": "{Cypress_key}"
 * Run this command now, or in CI
 ```sh
 cypress run --record --key {your Key}
