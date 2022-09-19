@@ -247,7 +247,7 @@ cypress run --config video=false
 ```
 ## Remote runing the test (Dashboard)
 ```sh
-cypress run --record --key e01e9dac-4f4f-4306-8fd2-354eae09bec1
+cypress run --record --key 'your_Cypress_KEY'
 ```
 
 # Debuging Cypress tests
