@@ -1,4 +1,4 @@
-describe('Create and mark-unmark as favorite', function () {
+describe('Tests with an alias', function () {
 
     Cypress.config('pageLoadTimeout', 100000)
 
@@ -40,7 +40,7 @@ describe('Create and mark-unmark as favorite', function () {
         cy.url().should('include', 'article')
     })
 
-    it('Mark-unmark as favorite', function () {
+    it('Mark-unmark as favorite', function () { 
         cy.get('ul.navbar-nav').children().contains('New Article').click() 
         cy.contains('My Articles').should('be.visible')
         cy.get('.ion-heart').first().click()

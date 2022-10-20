@@ -1,3 +1,4 @@
+import 'cypress-file-upload';
 const user_prefix = 'test012345' // here is a prefix that can help to unify a user credentials
 Cypress.Commands.add("SignIn", () =>{
      // before of implementing custom commands request for redirecting to the home page was doing by cy.visit("https://cirosantilli-realworld-next.herokuapp.com/")   // There is no usage of any parameters, just simple usage of string URL
