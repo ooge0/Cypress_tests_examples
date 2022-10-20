@@ -12,9 +12,17 @@ describe('Create and mark-unmark as favorite', function () {
         cy.get('@home').should('contain', 'Home') // Basic assertion when we are checking the inner text
     })
 
-    it.only('Simple test example with alias defined in \'before\' hook', function (){
+    it('Simple test-1 example with alias defined in \'before\' hook', function (){
         const label = cy.get('@settings').invoke('text')// This is an 'alias' usage that was defined in the before hook
         label.should('contain', 'Settings') // Basic assertion when we are checking the inner text
+    })
+
+
+    it('Simple test-2 example with alias defined in \'before\' hook', function (){
+        cy.get('@settings').invoke('text')// This is an 'alias' usage that was defined in the before hook without intermediate value
+        .then((label)=>{
+            expect(label).to.eq('\u00a0Settings') // Here is modified test-1 when we are using 'then' command
+        }) 
     })
 
 
