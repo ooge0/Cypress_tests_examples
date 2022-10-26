@@ -12,7 +12,7 @@ Below are the main parts of the project to help you navigate to specific instruc
 
 # Content
 
-[1. Cypress installation guide](#1-cypress-instalition-guide)
+[1. Cypress installation guide](#1-cypress-installation-guide)
 
 [2. Basic Cypress  project](#2-basic-cypress-project)
 
@@ -30,7 +30,7 @@ Below are the main parts of the project to help you navigate to specific instruc
 
 [6. FIXES](#FIXES)
 
-## 1. Cypress instalition guide
+## 1. Cypress installation guide
 Before you start to work on tests you need to prepare everithing that Cypress reqiures. Below is a list of actions that you need to complete. Then you will find basic project structure, folders and unique files that will be created after completeing instalation steps. 
 I want to note that additional actions, like a creating custom reports, usage different approaches for writing tests, also add something new to your project stracture. 
 This way you will get a project structure that will be different from the original configuration.
