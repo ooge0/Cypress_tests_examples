@@ -12,6 +12,8 @@
   "scripts": {
     "test": "cypress run"
   },
+  "video": false,
+  "screenshotOnRunFailure":	false,
   "keywords": [],
   "author": "",
   "license": "ISC"
