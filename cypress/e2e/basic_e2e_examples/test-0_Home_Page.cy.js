@@ -8,7 +8,7 @@ describe('Home page tests', function()
         cy.get('.navbar-brand').should('be.visible')
         })
     
-    it('Banner is visible on the Home page',function() { // Test for validation of bznner visibility
+    it('Banner is visible on the Home page',function() { // Test for validation of banner visibility
     cy.get('.banner').should('be.visible')
     })
 })
