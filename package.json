@@ -4,7 +4,7 @@
   "description": "This guide includes basic steps for creating test framework: \r * configuring web application that will be tested,\r * basic conditions for test framework,\r * setuping additional features, that will used for providing additional options, like a custom reports\r * scripts, for runing specific tests and not only\r * service actions, like a deleting generated reports, cleaning test artifacts\r * actions for executing the test run on local machine and remote host that should be completed if you decided to use specific reporters or execute tests by continue integration tools, like ```Jenkins```",
   "main": "cypress.config.js",
   "dependencies": {
-    "cypress": "^10.7.0"
+   "cypress": "^10.11.0"
   },
   "devDependencies": {
     "cypress": "^10.11.0"
