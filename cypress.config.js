@@ -1,13 +1,11 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-   env: {
-      baseUrl: "https://cirosantilli-realworld-next.herokuapp.com"
-    },
-  }
-  
+    e2e: { setupNodeEvents(on, config) {
+            // implement node event listeners here
+        },
+        env: {
+            baseUrl: "https://cirosantilli-realworld-next.herokuapp.com"
+        },
+    }
 });

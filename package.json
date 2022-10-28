@@ -4,9 +4,13 @@
   "description": "This guide includes basic steps for creating test framework: \r * configuring web application that will be tested,\r * basic conditions for test framework,\r * setuping additional features, that will used for providing additional options, like a custom reports\r * scripts, for runing specific tests and not only\r * service actions, like a deleting generated reports, cleaning test artifacts\r * actions for executing the test run on local machine and remote host that should be completed if you decided to use specific reporters or execute tests by continue integration tools, like ```Jenkins```",
   "main": "cypress.config.js",
   "dependencies": {
-   "cypress": "^10.11.0"
+    "cypress": "^10.11.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "save-dev": "0.0.1-security"
   },
   "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "cypress": "^10.11.0"
   },
   "scripts": {
@@ -16,8 +20,11 @@
     "scripts_firefox_HomePage": "cypress run --browser firefox --spec cypress\\e2e\\basic_e2e_examples\\test-0_Home_Page.cy.js",
     "test_chrome_firefox_HomePage": "npm run scripts_firefox_HomePage && npm run scripts_firefox_HomePage"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "video": false,
-  "screenshotOnRunFailure":	false,
+  "screenshotOnRunFailure": false,
   "keywords": [],
   "author": "",
   "license": "ISC"
